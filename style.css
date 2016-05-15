@@ -49,9 +49,28 @@ nav{
  }
  
  .flex-item a:hover, .flex-item a:focus {
-  background-color: #CC3300;
+  background-color: #6a8541;
   cursor: pointer;
 }
+
+.flex-item #inner-list{
+    position:absolute;
+    padding: 0;
+	left:0;
+	top:100%;
+    list-style-type: none;
+    background-color: #6a8541;
+	display:none;   
+}
+
+.flex-item:hover #inner-list{
+    display: block;
+}
+
+.flex-item #inner-list li:hover a{
+    background-color: #7e9b53;
+}
+
 
 .header-logo{
     position: relative;
