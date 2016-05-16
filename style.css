@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    position: relative;
+}
+
+.wrapper{
+   width: 100%;
+   height: 1000px;
+   background: #EAEAEA;
+}
+
+header{
+    background-color: #383D41;
+    position: relative;
+    width: 100%;
+}
+
+nav{
+    background-color: #383D41;
+    display: inline-block;
+    width: 1110px;
+}
+
+.flex-container {
+    width: 920px;
+    height: 40px;
+    padding: 0;
+    float: left;
+    margin: auto;
+    background-color: #383D41;
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.flex-item a{
+    color: #FFF;
+    display: block;
+    padding: 10px 8px;
+    text-decoration: none;
+ }
+ 
+ .flex-item a:hover, .flex-item a:focus {
+  background-color: #6a8541;
+  cursor: pointer;
+}
+
+.flex-item #inner-list{
+    position:absolute;
+    padding: 0;
+	left:0;
+	top:100%;
+    list-style-type: none;
+    background-color: #6a8541;
+	display:none;   
+}
+
+.flex-item:hover #inner-list{
+    display: block;
+}
+
+.flex-item #inner-list li:hover a{
+    background-color: #7e9b53;
+}
+
+
+.header-logo{
+    position: relative;
+    float: left;
+    background-color: #383D41;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+}
+
+.header-logo img{
+    position: absolute;
+    top: 0px;
+    clip: rect(auto, 38px, 50px, auto);
+}
